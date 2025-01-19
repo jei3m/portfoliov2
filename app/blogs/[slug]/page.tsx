@@ -29,7 +29,7 @@ export default async function Post({ params }: { params: Params }) {
   const { title, image, author, publishedAt } = metadata
 
   return (
-    <section className='pb-24 max-w-6xl mx-auto p-4 md:p-6 lg:p-4 xl:p-0'>
+    <section className='bg-zinc-950 pb-24 max-w-6xl mx-auto p-4 md:p-6 lg:p-4 xl:p-0'>
       <div className='w-full'>
           <div className='p-4 md:p-6 lg:p-10'>
             <Header />
@@ -45,7 +45,7 @@ export default async function Post({ params }: { params: Params }) {
           </TransitionLink>
 
           <div>
-            <h1 className='text-lg md:text-xl'>{author}</h1>
+            <h1 className='text-white text-lg md:text-xl'>{author}</h1>
             <p className='text-muted-foreground mt-2 text-sm md:text-md text-right'>{formatDate(publishedAt ?? '')}</p>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default async function Post({ params }: { params: Params }) {
           </div>
         )}
 
-        <main className='prose mt-16 dark:prose-invert mx-auto max-w-6xl break-words'>
+        <main className='prose mt-16 prose-invert mx-auto max-w-6xl break-words'>
           <MDXContent source={content} />
         </main>
 
