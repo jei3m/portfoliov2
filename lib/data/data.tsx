@@ -75,7 +75,7 @@ export const DATA = {
 
     {
         "title": "AI-Ponics",
-        "description": "A thesis project website under development, built with React JS. It integrates Blynk API and Gemini AI.",
+        "description": "A thesis project under development, built with React JS. It integrates Blynk API and Gemini AI.",
         "type": "School Project",
         "imageUrl": "/images/projects/aiponics.png",
         "githubUrl": "https://github.com/jei3m/ai-ponics",
@@ -89,7 +89,7 @@ export const DATA = {
     },
     {
       "title": "ScribeAI",
-      "description": "A full-stack document editor website built with React JS, Firebase, and Gemini AI.",
+      "description": "A full-stack document editor built with React JS, React Quill, Firebase, and Gemini AI for content assistance.",
       "type": "Personal Project",
       "imageUrl": "/images/projects/scribe.png",
       "githubUrl": "https://github.com/jei3m/scribe-ai",
@@ -109,9 +109,75 @@ export const DATA = {
       "demoUrl": "https://ai-coder-llama.netlify.app",
       "skills": [
           "Next JS",
-          "Llama 405B",
+          "Llama 3.3",
           "Tailwind CSS"
       ]
-    }
+    },
+    {
+      "title": "E-Commerce",
+      "description": "A full-stack E-commerce platform built with Laravel, with PayPal integration for online payments.",
+      "type": "Personal Project",
+      "imageUrl": "/images/projects/laravelshop.png",
+      "githubUrl": "https://github.com/jei3m/laravel-ecommerce",
+      "demoUrl": "",
+      "skills": [
+          "Laravel",
+          "Tailwind CSS",
+          "Paypal"
+      ]
+    },
+    {
+      "title": "Pogi Typings",
+      "description": "A React JS website with Gemini AI to correct punctuation and spelling of Taglish sentences.",
+      "type": "Personal Project",
+      "imageUrl": "/images/projects/pogi.png",
+      "githubUrl": "https://github.com/jei3m/pogi-typings",
+      "demoUrl": "https://pogi-typings.vercel.app",
+      "skills": [
+          "React JS",
+          "Gemini AI",
+          "HTML & CSS"
+      ]
+    },
+    {
+      "title": "Ollama Chat",
+      "description": "A Next JS-based project that serves as an intuitive UI for running local Ollama models.",
+      "type": "Personal Project",
+      "imageUrl": "/images/projects/ollama.png",
+      "githubUrl": "https://github.com/jei3m/ollama-chat",
+      "skills": [
+          "Next JS",
+          "Ollama",
+          "TypeScript",
+          "Tailwind CSS"
+      ]
+    },
+    {
+
+      "title": "About Me",
+      "description": "A requirement for our Software Development course, built with HTML and CSS.",
+      "type": "School Project",
+      "imageUrl": "/images/projects/aboutme.png",
+      "githubUrl": "https://github.com/jei3m/SDEV_Experiment-4/tree/main",
+      "demoUrl": "https://aboutjm.vercel.app",
+      "skills": [
+          "HTML & CSS"
+      ]
+    },
+    {
+
+      "title": "React Pokemon",
+      "description": "A simple turn based Pokemon battle game built with React JS and Tailwind CSS.",
+      "type": "School Project",
+      "imageUrl": "/images/projects/pokemon.png",
+      "githubUrl": "https://github.com/jei3m/SDEV_Experiment-4/tree/main",
+      "demoUrl": "https://aboutjm.vercel.app",
+      "skills": [
+          "React JS",
+          "Tailwind CSS"
+      ]
+    },
+
   ]
+
 } as const;
