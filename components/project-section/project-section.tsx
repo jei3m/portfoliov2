@@ -8,7 +8,7 @@ import { FiArrowRightCircle } from "react-icons/fi";
 
 const ProjectsGrid = () => {
     const [isMobile, setIsMobile] = useState(false);
-    const [visibleProjects] = useState(2); 
+    const [visibleProjects] = useState(4); 
 
     // Handle window resize
     useEffect(() => {
@@ -40,35 +40,32 @@ const ProjectsGrid = () => {
 
                     <div className="flex items-stretch">
                         {/* Projects Container */}
-                        <div className={`
-                            grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2'} gap-10
-                            transition-all duration-500 ease-in-out
-                            mx-3 lg:mx-0
-                        `}>
-                            {DATA.projects.slice(0, visibleProjects).map((project, index) => (
-                                <Reveal
-                                    key={`${project.title}-${index}`}
-                                    initial={{ opacity: 0, x: -100 }}
-                                    whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5, delay: index / 30 } }}
-                                >
-                                    <div className={`
-                                        ${isMobile ? 'w-full' : 'w-auto'}
-                                        transform transition-all duration-500
-                                        flex items-stretch
-                                    `}>
-                                        <ProjectCard
-                                            title={project.title}
-                                            type={project.type}
-                                            description={project.description}
-                                            imageUrl={project.imageUrl}
-                                            githubUrl={project.githubUrl}
-                                            demoUrl={project.demoUrl}
-                                            skills={project.skills}
-                                        />
-                                    </div>
-                                </Reveal>
-                            ))}
-                        </div>
+                        <Reveal
+                            initial={{ opacity: 0, x: -100 }}
+                            whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
+                        >
+                            <div className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2'} gap-10 mx-3 lg:mx-0 items-stretch`}>
+                                {DATA.projects.slice(0, visibleProjects).map((project, index) => (
+                                    <Reveal
+                                        key={`${project.title}-${index}`}
+                                        initial={{ opacity: 0, x: -100 }}
+                                        whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5, delay: index / 30 } }}
+                                    >
+                                        <div className="flex flex-col">
+                                            <ProjectCard
+                                                title={project.title}
+                                                type={project.type}
+                                                description={project.description}
+                                                imageUrl={project.imageUrl}
+                                                githubUrl={project.githubUrl}
+                                                // demoUrl={project.demoUrl}
+                                                skills={project.skills}
+                                            />
+                                        </div>
+                                    </Reveal>
+                                ))}
+                            </div>
+                        </Reveal>
                     </div>
 
                     <div className="flex justify-center pt-20 gap-4">
