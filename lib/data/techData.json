@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Frameworks",
+    "description": "Building responsive and efficient user experiences with front-end and full-stack applications.",  
+    "icons": [
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg",
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored-dark.svg",
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/laravel-colored.svg"
+    ]
+  },
+  {
+    "title": "JS Ecosystem",
+     "description": "Developing interactive and dynamic applications for both front-end and backend development.",    
+     "icons": [
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg",
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
+    ]
+  },
+  {
+    "title": "HTML & CSS",
+    "description": "Crafting semantic markup and styling with modern HTML5 and CSS3. Harnessing the basics of web development.",
+    "icons": [
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
+    ]
+  },
+  {
+    "title": "Tailwind CSS",
+    "description": "Utilizing utility-first CSS framework for rapid and consistent UI development.",
+    "icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg"
+  },
+  {
+    "title": "Backend Services",
+    "description": "For real-time databases, authentication, and cloud functions, offering easy deployment.",    
+    "icons": [
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg",
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/supabase-colored.svg"
+    ]
+  },
+  {
+    "title": "Programming",
+    "description": "Python for machine learning and data analysis, and C++ for input/output operations.",
+    "icons": [
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg",
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/cplusplus-colored.svg"
+    ]
+  },
+  {
+    "title": "Embedded Systems",
+    "description": "Developing IoT devices and embedded systems using Arduino, Raspberry Pi, and ESP32.",
+    "icons": [
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/arduino-colored.svg",
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/raspberrypi-colored.svg"
+    ]
+  },
+  {
+    "title": "AI Integration",
+    "description": "Implementing AI into applications with API inferences and local models like Ollama.",
+    "isLucideIcon": true,
+    "LucideIcon": "Brain"
+  }
+]
