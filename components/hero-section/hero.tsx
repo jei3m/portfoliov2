@@ -75,9 +75,11 @@ export default function Hero() {
             <div className="flex items-center justify-center gap-5 mt-8">
               {/* Email Icon with Tooltip */}
               <Tooltip>
-                <TooltipTrigger>
-                  <Mail className="h-8 w-8 md:h-11 md:w-11 mt-0.5 text-yellow-50" />
-                </TooltipTrigger>
+                <a href="mailto:justinmiguel.rys03@gmail.com">
+                  <TooltipTrigger>
+                    <Mail className="h-8 w-8 md:h-11 md:w-11 mt-2 text-yellow-50" />
+                  </TooltipTrigger>
+                </a>
                 <TooltipContent>
                   <p>Email</p>
                 </TooltipContent>
@@ -135,7 +137,7 @@ export default function Hero() {
               <Tooltip>
                 <TooltipTrigger>
                   <TransitionLink href="#">
-                    <FileText className="h-7 w-7 md:h-9 md:w-9 -mt-0.5 text-yellow-50" />
+                    <FileText className="h-7 w-7 md:h-9 md:w-9 text-yellow-50" />
                   </TransitionLink>
                 </TooltipTrigger>
                 <TooltipContent>
