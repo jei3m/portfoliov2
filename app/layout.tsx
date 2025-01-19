@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning className={`${GeistSans.className} !scroll-smooth`}>
       <ReactLenis root>
-        <body>
+        <body className='bg-zinc-950'>
           <Providers>
             <main className='grow'>{children}</main>
             {/* <Footer /> */}
