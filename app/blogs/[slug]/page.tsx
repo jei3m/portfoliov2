@@ -1,4 +1,5 @@
 import Image from 'next/image'
+
 import { formatDate } from '@/lib/utils'
 import MDXContent from '@/components/next-mdx/mdx-content'
 import { getPosts, getPostBySlug } from '@/lib/posts'
@@ -14,9 +15,10 @@ export async function generateStaticParams() {
 
   return slugs
 }
+type Params = Promise<{ slug: string }>
+export default async function Post({ params }: { params: Params }) {
+  const { slug } = await params
 
-export default async function Post({ params }: { params: { slug: string } }) {
-  const { slug } = params
   const post = await getPostBySlug(slug)
 
   if (!post) {
