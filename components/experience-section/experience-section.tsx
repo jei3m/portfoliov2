@@ -1,10 +1,7 @@
 'use client'
 import { DATA } from "@/lib/data/data";
 import { ExperienceCard } from './ExperienceCard';
-import BlurFade from '../ui/blur-fade';
 import { Reveal } from '@/components/custom-wrapper/Reveal';
-
-const BLUR_FADE_DELAY = 0.04;
 
 
 export default function ExperienceSection() {
@@ -12,7 +9,6 @@ export default function ExperienceSection() {
   return (
     <section id="experience" className='mb-[14rem] scroll-mt-28 p-4 md:p-6 lg:p-4 xl:p-0'>
         <div className="flex min-h-0 flex-col gap-y-3">
-        <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <Reveal
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
@@ -25,7 +21,6 @@ export default function ExperienceSection() {
                 </div>
 
             </Reveal>
-        </BlurFade>
         {DATA.experience.map((experience, id) => (
           
                 <Reveal
