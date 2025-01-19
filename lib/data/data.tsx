@@ -136,7 +136,7 @@ export const DATA = {
       "skills": [
           "React JS",
           "Gemini AI",
-          "HTML & CSS"
+          "CSS"
       ]
     },
     {
@@ -161,7 +161,8 @@ export const DATA = {
       "githubUrl": "https://github.com/jei3m/SDEV_Experiment-4/tree/main",
       "demoUrl": "https://aboutjm.vercel.app",
       "skills": [
-          "HTML & CSS"
+          "HTML",
+          "CSS"
       ]
     },
     {
