@@ -6,4 +6,4 @@ export interface ProjectMetadata {
     githubUrl: string;
     demoUrl?: string;
     skills: string[];
-  }
+}

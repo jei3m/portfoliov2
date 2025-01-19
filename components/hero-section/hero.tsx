@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import authorImage from '@/public/images/authors/memoji.png'
 import { Reveal } from '@/components/custom-wrapper/Reveal'
-import { FileText, Mail } from "lucide-react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { TransitionLink } from "@/components/custom-wrapper/TransitionLink"
@@ -10,6 +9,9 @@ import GridPattern from '@/components/ui/grid-pattern'
 import { cn } from "@/lib/utils"
 import ScrollLink from '@/components/custom-wrapper/ScrollLink';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { FaRegEnvelope } from 'react-icons/fa6'
+import { CgFileDocument } from "react-icons/cg";
+
 
 
 
@@ -77,7 +79,7 @@ export default function Hero() {
               <Tooltip>
                 <a href="mailto:justinmiguel.rys03@gmail.com">
                   <TooltipTrigger>
-                    <Mail className="h-8 w-8 md:h-11 md:w-11 mt-2 text-yellow-50" />
+                    <FaRegEnvelope className="h-8 w-8 md:h-10 md:w-10 text-yellow-50 mt-2" />
                   </TooltipTrigger>
                 </a>
                 <TooltipContent>
@@ -137,7 +139,7 @@ export default function Hero() {
               <Tooltip>
                 <TooltipTrigger>
                   <TransitionLink href="#">
-                    <FileText className="h-7 w-7 md:h-9 md:w-9 text-yellow-50" />
+                    <CgFileDocument className="h-7 w-7 md:h-10 md:w-10 text-yellow-50" />
                   </TransitionLink>
                 </TooltipTrigger>
                 <TooltipContent>
