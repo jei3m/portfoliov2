@@ -1,12 +1,8 @@
 import type { Metadata } from 'next'
-import { cn } from '@/lib/utils'
 import { GeistSans } from 'geist/font/sans';
 import ReactLenis from 'lenis/react';
-
-
 import './globals.css'
 import Providers from '@/components/custom-wrapper/Providers'
-import Header from '@/components/header/Header'
 // import Footer from '@/components/footer'
 
 export const metadata: Metadata = {

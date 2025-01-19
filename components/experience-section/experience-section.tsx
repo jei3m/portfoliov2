@@ -20,7 +20,7 @@ export default function ExperienceSection() {
                 <div className="flex flex-row justify-between border-b border-neutral-700 pb-4">
                     <h2 className='text-2xl md:text-5xl text-yellow-50 font-semibold'>Experience.</h2>
                     <p className="text-right mt-4 mb-[-1rem] text-[10px] font-normal md:text-2xl text-yellow-50">
-                        // <span className="text-cyan-400">Striving</span> for <span className='text-green-400'>growth</span> and <span className='text-purple-400'>innovation</span>.
+                        {'//'} <span className="text-cyan-400">Striving</span> for <span className='text-green-400'>growth</span> and <span className='text-purple-400'>innovation</span>.
                     </p>
                 </div>
 

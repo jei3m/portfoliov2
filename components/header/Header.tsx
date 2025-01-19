@@ -1,7 +1,5 @@
-import Link from 'next/link';
-import { ThemeToggle } from './ThemeToggle';
 import { TransitionLink } from '@/components/custom-wrapper/TransitionLink';
-import { NotebookText, LayoutDashboard, Mail, Folder, NotebookPen, Home } from 'lucide-react'; // Import icons from lucide-react
+import { Folder, NotebookPen, Home } from 'lucide-react';
 
 export default function Header() {
   return (

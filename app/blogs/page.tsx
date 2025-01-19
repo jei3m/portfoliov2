@@ -1,9 +1,4 @@
 import { getPosts } from '@/lib/posts'
-import Link from 'next/link'
-import Posts from '@/components/blogs-page/Blogs'
-import { DATA } from "@/lib/data/data";
-import BlurFade from '@/components/ui/blur-fade';
-import { Reveal } from '@/components/custom-wrapper/Reveal'
 import Header from '@/components/header/Header';
 import BlogsWithSearch from '@/components/blogs-page/BlogsWithSearch';
 

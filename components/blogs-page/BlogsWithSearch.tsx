@@ -6,7 +6,6 @@ import Posts from './Blogs'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { Cross2Icon } from '@radix-ui/react-icons'
-import { Reveal } from '@/components/custom-wrapper/Reveal'
 
 export default function BlogsWithSearch({ posts }: { posts: PostMetadata[] }) {
   const [query, setQuery] = useState('')

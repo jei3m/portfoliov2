@@ -1,9 +1,8 @@
 import React from 'react';
-import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/tooltip'; // Adjust the import based on your setup
-import { Mail, FileText } from 'lucide-react'; // Assuming you're using Lucide icons
+import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/tooltip'; 
+import { Mail, FileText } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { FaEnvelope, FaRegEnvelope } from 'react-icons/fa6';
 
 export default function Content() {
   return (
@@ -38,7 +37,7 @@ const Nav = () => {
   return (
     <div className='flex flex-col'>
       <div className='border-b border-neutral-700 pb-6'>
-        <h1 className='text-3xl md:text-5xl xl:text-7xl font-semibold text-yellow-50 mb-2'>Let's Connect!</h1>
+        <h1 className='text-3xl md:text-5xl xl:text-7xl font-semibold text-yellow-50 mb-2'>Let&apos;s Connect!</h1>
         <h2 className='text-md md:text-lg xl:text-2xl font-normal text-yellow-50 max-w-5xl'>
             Whether it&apos;s a project idea, a tailored solution, or just a tech discussion, feel free to reach out! Together, we&apos;ll transform that vision into reality.
         </h2>

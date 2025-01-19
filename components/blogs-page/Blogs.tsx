@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 import { PostMetadata } from '@/lib/posts'
 import { formatDate } from '@/lib/utils'
 import { TransitionLink } from '@/components/custom-wrapper/TransitionLink'

@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/utils/cn";
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useState, useContext, HTMLAttributes } from "react";
 
 const MouseEnterContext = createContext<
   [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
@@ -61,8 +61,7 @@ export const CardItem = ({
   as?: React.ElementType;
   children: React.ReactNode;
   className?: string;
-  [key: string]: any;
-}) => {
+} & HTMLAttributes<HTMLElement>) => {
   return (
     <Tag
       className={cn("w-fit transition duration-200 ease-linear", className)}

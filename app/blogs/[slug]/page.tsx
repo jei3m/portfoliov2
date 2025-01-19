@@ -1,6 +1,4 @@
-import Link from 'next/link'
 import Image from 'next/image'
-
 import { formatDate } from '@/lib/utils'
 import MDXContent from '@/components/next-mdx/mdx-content'
 import { getPosts, getPostBySlug } from '@/lib/posts'

@@ -1,11 +1,7 @@
 "use client";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardHeader } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
-import { ChevronRightIcon } from "lucide-react";
-import Link from "next/link";
+import { CardHeader } from "@/components/ui/card";
 import React from "react";
 
 interface ExperienceCardProps {
@@ -24,8 +20,6 @@ export const ExperienceCard = ({
   altText,
   title,
   subtitle,
-  href,
-  badges,
   period,
   description,
 }: ExperienceCardProps) => {

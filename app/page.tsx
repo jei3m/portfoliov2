@@ -1,24 +1,12 @@
-// 'use client'
 import EducationSection from '@/components/education-section/education-section'
 import ExperienceSection from '@/components/experience-section/experience-section'
-// import { HoverImageLinks } from '@/components/HoverImageLinks'
 import Hero from '@/components/hero-section/hero'
-import DotPattern from '@/components/ui/dot-pattern'
-import { cn } from '@/lib/utils'
-import { useEffect } from 'react'
 import Header from '@/components/header/Header'
 import ProjectSection from '@/components/project-section/project-section'
-import { HoverImageLinks } from '@/components/HoverImageLinks'
 import TechStack from '@/components/tech-section/TechStack'
 import Footer from '@/components/footer/Footer'
 
 export default function Home() {
-
-  // useEffect(() => {
-  //   if ('scrollRestoration' in window.history) {
-  //     window.history.scrollRestoration = 'manual';
-  //   }
-  // }, []);
 
   return (
     <section>

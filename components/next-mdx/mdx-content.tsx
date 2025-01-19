@@ -1,16 +1,19 @@
-import { JSX } from 'react'
-import { highlight } from 'sugar-high'
-import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote/rsc'
+import { JSX } from 'react';
+import { highlight } from 'sugar-high';
+import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote/rsc';
 
+interface CodeProps extends React.HTMLAttributes<HTMLElement> {
+  children: string;
+}
 
-function Code({ children, ...props }: any) {
-  let codeHTML = highlight(children)
-  return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />
+function Code({ children, ...props }: CodeProps) {
+  const codeHTML = highlight(children);
+  return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />;
 }
 
 const components = {
   code: Code,
-}
+};
 
 export default function MDXContent(
   props: JSX.IntrinsicAttributes & MDXRemoteProps
@@ -20,5 +23,5 @@ export default function MDXContent(
       {...props}
       components={{ ...components, ...(props.components || {}) }}
     />
-  )
+  );
 }

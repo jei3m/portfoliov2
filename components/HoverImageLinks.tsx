@@ -1,7 +1,6 @@
 'use client';
 
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
-import Link from "next/link";
 import React, { useRef } from "react";
 import { FiArrowRight } from "react-icons/fi";
 

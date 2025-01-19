@@ -4,9 +4,6 @@ import { EducationCard } from './EducationCard';
 import { Reveal } from '@/components/custom-wrapper/Reveal';
 
 
-const BLUR_FADE_DELAY = 0.04;
-
-
 export default function EducationSection() {
 
   return (
@@ -19,7 +16,7 @@ export default function EducationSection() {
                 <div className="flex flex-row justify-between border-b border-neutral-700 pb-4">
                     <h2 className='text-2xl md:text-5xl text-yellow-50 font-semibold'>Education.</h2>
                     <p className="text-right mt-4 mb-[-1rem] font-normal text-[10px] md:text-2xl text-yellow-50">
-                        // My <span className='text-cyan-400'>journey</span> through the <span className='text-orange-400'>academe</span>.
+                        {'//'} My <span className='text-cyan-400'>journey</span> through the <span className='text-orange-400'>academe</span>.
                     </p>
                 </div>
             </Reveal>

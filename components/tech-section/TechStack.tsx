@@ -34,7 +34,7 @@ const TechStack: React.FC = () => {
 
 
                 <p className="mt-4 mb-[-0.5rem] text-right text-xs font-normal md:text-2xl text-yellow-50">
-                    // Always <span className='text-green-400'>learning</span> and <span className='text-cyan-400'>adapting</span>.
+                  {'//'} Always <span className='text-green-400'>learning</span> and <span className='text-cyan-400'>adapting</span>.
                 </p>
             </div>
         </Reveal>

@@ -8,7 +8,7 @@ import { FiArrowRightCircle } from "react-icons/fi";
 
 const ProjectsGrid = () => {
     const [isMobile, setIsMobile] = useState(false);
-    const [visibleProjects, setVisibleProjects] = useState(2); 
+    const [visibleProjects] = useState(2); 
 
     // Handle window resize
     useEffect(() => {
@@ -34,7 +34,7 @@ const ProjectsGrid = () => {
                     >
                         <h2 className='text-2xl md:text-5xl font-semibold text-yellow-50 border-b border-neutral-700 pb-4'>Featured Projects.</h2>
                         <p className="text-right mt-4 mb-[-1rem] text-xs font-normal md:text-2xl text-yellow-50">
-                          // My <span className='text-purple-400'>personal</span> and <span className='text-orange-400'>school</span> projects.
+                            {'//'} My <span className='text-purple-400'>personal</span> and <span className='text-orange-400'>school</span> projects.
                         </p>
                     </Reveal>
 
