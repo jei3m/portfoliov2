@@ -1,12 +1,7 @@
-import { ExternalLink } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { CardBody, CardContainer, CardItem } from "./3d-card";
 import { AspectRatio } from "./aspect-ratio";
 import { Badge } from "./badge";
-import { Button } from "./button";
-import { FaGithub } from "react-icons/fa6";
-import { TransitionLink } from "../custom-wrapper/TransitionLink";
 
 interface ProjectCardProps {
     title: string;
@@ -16,10 +11,9 @@ interface ProjectCardProps {
     githubUrl?: string;
     demoUrl?: string;
     skills?: readonly string[];
-    
 }
 
-export function ProjectCard({ title, type, description, imageUrl, githubUrl, demoUrl, skills }: ProjectCardProps) {
+export function ProjectCard({ title, type, description, imageUrl, githubUrl, skills }: ProjectCardProps) {
     return (
         <CardContainer className="w-full h-full">
             <CardBody 

@@ -1,6 +1,5 @@
 import React from 'react';
 import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/tooltip'; 
-import { FileText } from 'lucide-react';
 import { FaRegEnvelope } from 'react-icons/fa6';
 import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg"
