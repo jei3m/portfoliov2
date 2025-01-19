@@ -1,8 +1,9 @@
 import React from 'react';
 import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/tooltip'; 
-import { Mail, FileText } from 'lucide-react';
+import { FileText } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FaRegEnvelope } from 'react-icons/fa6';
 
 export default function Content() {
   return (
@@ -18,7 +19,7 @@ const Section1 = () => {
     <div>
       <Nav />
     </div>
-  );
+);
 };
 
 const Section2 = () => {
@@ -54,7 +55,7 @@ const SocialIcons = () => {
         <Tooltip>
           <a href="mailto:justinmiguel.rys03@gmail.com">
             <TooltipTrigger>
-              <Mail className="h-8 w-8 md:h-11 md:w-11 mt-2 text-yellow-50" />
+              <FaRegEnvelope className="h-6 w-6 md:h-9 md:w-9 lg:h-11 lg:w-11 mt-2 text-yellow-50" />
             </TooltipTrigger>
           </a>
           <TooltipContent>
