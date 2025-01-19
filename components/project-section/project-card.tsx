@@ -6,6 +6,7 @@ import { AspectRatio } from "./aspect-ratio";
 import { Badge } from "./badge";
 import { Button } from "./button";
 import { FaGithub } from "react-icons/fa6";
+import { TransitionLink } from "../custom-wrapper/TransitionLink";
 
 interface ProjectCardProps {
     title: string;
@@ -20,20 +21,22 @@ interface ProjectCardProps {
 
 export function ProjectCard({ title, type, description, imageUrl, githubUrl, demoUrl, skills }: ProjectCardProps) {
     return (
-        <CardContainer className="w-full">
+        <CardContainer className="w-full h-full">
             <CardBody 
-                className="mb-[-60px] relative w-full max-w-[600px] h-auto mx-auto rounded-xl p-0 text-white">
+                className="mb-[-80px] relative w-full max-w-[600px] h-auto mx-auto rounded-xl p-0 text-white">
                 
                 <div className="flex flex-col h-full">
                     <CardItem className="w-full">
-                        <AspectRatio ratio={16 / 8.5}>
-                            <Image
-                                src={imageUrl}
-                                alt="Project Image"
-                                fill
-                                className="rounded-lg object-cover"
-                            />
-                        </AspectRatio>
+                        <a href={githubUrl} target="_blank">
+                            <AspectRatio ratio={16 / 8.5}>
+                                <Image
+                                    src={imageUrl}
+                                    alt="Project Image"
+                                    fill
+                                    className="rounded-lg object-cover"
+                                />
+                            </AspectRatio>
+                        </a>
                     </CardItem>
                     
                     <div className="">
@@ -51,7 +54,7 @@ export function ProjectCard({ title, type, description, imageUrl, githubUrl, dem
                         </CardItem>
                         <CardItem
                             as="p"
-                            className="text-xs sm:text-[16px] leading-5 sm:leading-6 mt-2 line-clamp-2 text-yellow-50"
+                            className="text-xs sm:text-[16px] leading-5 sm:leading-6 mt-2 text-yellow-50"
                         >
                             {description}
                         </CardItem>
@@ -72,7 +75,7 @@ export function ProjectCard({ title, type, description, imageUrl, githubUrl, dem
                             </CardItem>
                         )}
                     
-                        <CardItem
+                        {/* <CardItem
                             className="w-auto flex flex-row justify-between items-center mt-6"
                         >
                             {githubUrl && (
@@ -93,12 +96,12 @@ export function ProjectCard({ title, type, description, imageUrl, githubUrl, dem
                                         size="sm" 
                                         className="bg-yellow-50 px-3 h-8 sm:h-9"
                                     >
-                                        <span className="text-xs sm:text-sm">Demo</span>
-                                        <ExternalLink className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
+                                        <span className="text-xs text-black sm:text-sm">Demo</span>
+                                        <ExternalLink className="text-black ml-2 h-3 w-3 sm:h-4 sm:w-4" />
                                     </Button>
                                 </Link>
                             )}
-                        </CardItem>
+                        </CardItem> */}
                     </div>
                 </div>
             </CardBody>
