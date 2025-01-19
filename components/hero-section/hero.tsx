@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import authorImage from '@/public/images/authors/memoji.png'
 import { Reveal } from '@/components/custom-wrapper/Reveal'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { TransitionLink } from "@/components/custom-wrapper/TransitionLink"
 import { FiArrowDown } from "react-icons/fi";
 import GridPattern from '@/components/ui/grid-pattern'
@@ -11,6 +9,7 @@ import ScrollLink from '@/components/custom-wrapper/ScrollLink';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { FaRegEnvelope } from 'react-icons/fa6'
 import { CgFileDocument } from "react-icons/cg";
+import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 
 
@@ -95,7 +94,7 @@ export default function Hero() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FontAwesomeIcon icon={faFacebook} className="h-7 w-7 md:h-9 md:w-9 text-yellow-50" />
+                    <FaFacebookSquare className="h-7 w-7 md:h-9 md:w-9 text-yellow-50" />
                   </a>
                 </TooltipTrigger>
                 <TooltipContent>
@@ -111,7 +110,7 @@ export default function Hero() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FontAwesomeIcon icon={faGithub} className="h-7 w-7 md:h-9 md:w-9 text-yellow-50" />
+                    <FaGithubSquare className="h-7 w-7 md:h-9 md:w-9 text-yellow-50" />
                   </a>
                 </TooltipTrigger>
                 <TooltipContent>
@@ -127,7 +126,7 @@ export default function Hero() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FontAwesomeIcon icon={faLinkedin} className="h-7 w-7 md:h-9 md:w-9 text-yellow-50" />
+                    <FaLinkedin className="h-7 w-7 md:h-9 md:w-9 text-yellow-50" />
                   </a>
                 </TooltipTrigger>
                 <TooltipContent>
