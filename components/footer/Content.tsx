@@ -40,7 +40,7 @@ const Nav = () => {
       <div className='border-b border-neutral-700 pb-6'>
         <h1 className='text-3xl md:text-5xl xl:text-7xl font-semibold text-yellow-50 mb-2'>Let's Connect!</h1>
         <h2 className='text-md md:text-lg xl:text-2xl font-normal text-yellow-50 max-w-5xl'>
-            Whether it’s a project idea, a tailored solution, or just a tech discussion, feel free to reach out! Together, we'll transform that vision into reality.
+            Whether it&apos;s a project idea, a tailored solution, or just a tech discussion, feel free to reach out! Together, we&apos;ll transform that vision into reality.
         </h2>
       </div>
     </div>
@@ -53,9 +53,11 @@ const SocialIcons = () => {
       <div className="flex items-center justify-center gap-4 xl:gap-6 xl:mt-8">
         {/* Email Icon with Tooltip */}
         <Tooltip>
-          <TooltipTrigger>
-            <Mail className="h-6 w-6 md:h-10 md:w-10 xl:h-12 xl:w-12 lg:mt-0 text-yellow-50 hover:text-yellow-200 transition-colors" />
-          </TooltipTrigger>
+          <a href="mailto:justinmiguel.rys03@gmail.com">
+            <TooltipTrigger>
+              <Mail className="h-8 w-8 md:h-11 md:w-11 mt-2 text-yellow-50" />
+            </TooltipTrigger>
+          </a>
           <TooltipContent>
             <p>Email</p>
           </TooltipContent>
