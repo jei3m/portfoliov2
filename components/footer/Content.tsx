@@ -1,9 +1,10 @@
 import React from 'react';
 import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/tooltip'; 
 import { FileText } from 'lucide-react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FaRegEnvelope } from 'react-icons/fa6';
+import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { CgFileDocument } from "react-icons/cg"
+
 
 export default function Content() {
   return (
@@ -50,12 +51,12 @@ const Nav = () => {
 const SocialIcons = () => {
   return (
     <TooltipProvider>
-      <div className="flex items-center justify-center gap-4 xl:gap-6 xl:mt-8">
+      <div className="flex items-center justify-center gap-3 md:gap-6 xl:mt-8">
         {/* Email Icon with Tooltip */}
         <Tooltip>
           <a href="mailto:justinmiguel.rys03@gmail.com">
             <TooltipTrigger>
-              <FaRegEnvelope className="h-6 w-6 md:h-9 md:w-9 lg:h-11 lg:w-11 mt-2 text-yellow-50" />
+              <FaRegEnvelope className="h-6 w-6 md:h-9 md:w-9 lg:h-11 lg:w-11 mt-1.5 md:mt-2 text-yellow-50" />
             </TooltipTrigger>
           </a>
           <TooltipContent>
@@ -71,7 +72,7 @@ const SocialIcons = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faFacebook} className="h-5 w-5 md:h-8 md:w-8 xl:h-10 xl:w-10 text-yellow-50 hover:text-yellow-200 transition-colors" />
+              <FaFacebookSquare className="h-5 w-5 md:h-8 md:w-8 xl:h-10 xl:w-10 text-yellow-50 hover:text-yellow-200 transition-colors" />
             </a>
           </TooltipTrigger>
           <TooltipContent>
@@ -87,7 +88,7 @@ const SocialIcons = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faGithub} className="h-5 w-5 md:h-8 md:w-8 xl:h-10 xl:w-10 text-yellow-50 hover:text-yellow-200 transition-colors" />
+              <FaGithubSquare className="h-5 w-5 md:h-8 md:w-8 xl:h-10 xl:w-10 text-yellow-50 hover:text-yellow-200 transition-colors" />
             </a>
           </TooltipTrigger>
           <TooltipContent>
@@ -103,7 +104,7 @@ const SocialIcons = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faLinkedin} className="h-5 w-5 md:h-8 md:w-8 xl:h-10 xl:w-10 text-yellow-50 hover:text-yellow-200 transition-colors" />
+              <FaLinkedin className="h-5 w-5 md:h-8 md:w-8 xl:h-10 xl:w-10 text-yellow-50 hover:text-yellow-200 transition-colors" />
             </a>
           </TooltipTrigger>
           <TooltipContent>
@@ -115,7 +116,7 @@ const SocialIcons = () => {
         <Tooltip>
           <TooltipTrigger>
             <a href="#">
-              <FileText className="h-5 w-5 md:h-8 md:w-8 xl:h-10 xl:w-10 text-yellow-50 hover:text-yellow-200 transition-colors" />
+              <CgFileDocument className="h-5 w-5 md:h-9 md:w-9 xl:h-11 xl:w-11 text-yellow-50 hover:text-yellow-200 transition-colors" />
             </a>
           </TooltipTrigger>
           <TooltipContent>
