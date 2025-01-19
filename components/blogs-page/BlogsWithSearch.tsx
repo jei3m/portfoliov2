@@ -29,7 +29,7 @@ export default function BlogsWithSearch({ posts }: { posts: PostMetadata[] }) {
               placeholder='Search posts...'
               className='w-[140px] md:w-[300px] border border-neutral-700 text-xs md:text-xl mt-2 h-10'
               value={query}
-              onChange={e => setQuery(e.target.value)}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setQuery(e.target.value)}
             />
             {isFiltered && (
               <Button
