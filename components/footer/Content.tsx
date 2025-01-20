@@ -71,7 +71,7 @@ const SocialIcons = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebookSquare className="h-5 w-5 md:h-8 md:w-8 xl:h-10 xl:w-10 text-yellow-50 hover:text-yellow-200 transition-colors" />
+              <FaFacebookSquare className="h-5 w-5 md:h-8 md:w-8 xl:h-10 xl:w-10 text-yellow-50 transition-colors" />
             </a>
           </TooltipTrigger>
           <TooltipContent>
@@ -87,7 +87,7 @@ const SocialIcons = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithubSquare className="h-5 w-5 md:h-8 md:w-8 xl:h-10 xl:w-10 text-yellow-50 hover:text-yellow-200 transition-colors" />
+              <FaGithubSquare className="h-5 w-5 md:h-8 md:w-8 xl:h-10 xl:w-10 text-yellow-50 transition-colors" />
             </a>
           </TooltipTrigger>
           <TooltipContent>
@@ -103,7 +103,7 @@ const SocialIcons = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="h-5 w-5 md:h-8 md:w-8 xl:h-10 xl:w-10 text-yellow-50 hover:text-yellow-200 transition-colors" />
+              <FaLinkedin className="h-5 w-5 md:h-8 md:w-8 xl:h-10 xl:w-10 text-yellow-50 transition-colors" />
             </a>
           </TooltipTrigger>
           <TooltipContent>
@@ -114,8 +114,8 @@ const SocialIcons = () => {
         {/* Resume Icon with Tooltip */}
         <Tooltip>
           <TooltipTrigger>
-            <a href="#">
-              <CgFileDocument className="h-5 w-5 md:h-9 md:w-9 xl:h-11 xl:w-11 text-yellow-50 hover:text-yellow-200 transition-colors" />
+            <a href="/resume/ReyesJustinMiguel_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <CgFileDocument className="h-5 w-5 md:h-9 md:w-9 xl:h-11 xl:w-11 text-yellow-50 transition-colors" />
             </a>
           </TooltipTrigger>
           <TooltipContent>

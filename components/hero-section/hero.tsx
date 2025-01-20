@@ -137,9 +137,9 @@ export default function Hero() {
               {/* Resume Icon with Tooltip */}
               <Tooltip>
                 <TooltipTrigger>
-                  <TransitionLink href="#">
+                  <a href="/resume/ReyesJustinMiguel_Resume.pdf" target="_blank" rel="noopener noreferrer">
                     <CgFileDocument className="h-7 w-7 md:h-10 md:w-10 text-yellow-50" />
-                  </TransitionLink>
+                  </a>
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>Resume</p>
