@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import authorImage from '@/public/images/authors/memoji.png'
 import { Reveal } from '@/components/custom-wrapper/Reveal'
-import { TransitionLink } from "@/components/custom-wrapper/TransitionLink"
 import { FiArrowDown } from "react-icons/fi";
 import GridPattern from '@/components/ui/grid-pattern'
 import { cn } from "@/lib/utils"
