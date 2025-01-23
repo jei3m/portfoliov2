@@ -12,13 +12,14 @@ export const DATA = {
       start: "May 2021",
       end: "Oct 2022",
       description:
-      `<strong>Dean's List | GWA of 1.26 - 1.75</strong>
-    &bull; First Semester, SY 2024-2025
-    &bull; First Semester, SY 2021-2022
-    
+      `
     <strong>President's List | GWA of 1.0 - 1.25</strong>
     &bull; Second Semester, SY 2023-2024
-    &bull; Second Semester, SY 2021-2022`
+    &bull; Second Semester, SY 2021-2022
+
+      <strong>Dean's List | GWA of 1.26 - 1.75</strong>
+    &bull; First Semester, SY 2024-2025
+    &bull; First Semester, SY 2021-2022`
     },
     {
       company: "St. Augustine Academy of Pampanga",
@@ -52,24 +53,24 @@ export const DATA = {
     &bull; Optimized web-app performance with data fetching, and caching.
     &bull; Enhanced error handling with dynamic error messages from the API.
     `
-    },
-    {
-      company: "Freelancing",
-      href: "",
-      badges: [],
-      location: "Remote",
-      title: "Web Developer",
-      logoUrl: "/images/experience/JustinMiguel2.png",
-      start: "July 2024",
-      end: "PRESENT",
-      description:
-      `<strong>Key Responsibilities:</strong>
-    &bull; Designed and developed a responsive full-stack web-application.
-    &bull; Implemented server-sided pagination, queries, and filtering.
-    &bull; Optimized web-app performance with data fetching, and caching.
-    &bull; Enhanced error handling with dynamic error messages from the API.
-    `
     }
+    // {
+    //   company: "Freelancing",
+    //   href: "",
+    //   badges: [],
+    //   location: "Remote",
+    //   title: "Web Developer",
+    //   logoUrl: "/images/experience/JustinMiguel2.png",
+    //   start: "July 2024",
+    //   end: "PRESENT",
+    //   description:
+    //   `<strong>Key Responsibilities:</strong>
+    // &bull; Designed and developed a responsive full-stack web-application.
+    // &bull; Implemented server-sided pagination, queries, and filtering.
+    // &bull; Optimized web-app performance with data fetching, and caching.
+    // &bull; Enhanced error handling with dynamic error messages from the API.
+    // `
+    // }
   ],
   projects: [
 
