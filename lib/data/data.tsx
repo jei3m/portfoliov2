@@ -48,30 +48,30 @@ export const DATA = {
       end: "PRESENT",
       description:
       `<strong>Key Responsibilities:</strong>
-    &bull; Designed and developed a responsive full-stack web-application.
-    &bull; Implemented server-sided pagination, queries, and filtering.
-    &bull; Optimized web-app performance with data fetching, and caching.
-    &bull; Enhanced error handling with dynamic error messages from the API.
+    &bull; Designed and developed a responsive admin interface utilizing Laravel and React JS.
+    &bull; Implemented server-side pagination, querying, and filtering to reduce client-side load.
+    &bull; Optimized data fetching and caching mechanisms, minimizing unnecessary data refetching.
+    &bull; Enhanced error handling with dynamic API error messages, ensuring accurate feedback.
+    `
+    },
+    {
+      company: "Freelance Web Developer",
+      href: "",
+      badges: [],
+      location: "Remote",
+      title: "Web Developer",
+      logoUrl: "/images/experience/JustinMiguel2.png",
+      start: "July 2024",
+      end: "PRESENT",
+      description:
+      `<strong>Key Responsibilities:</strong>
+    &bull; Collaborated with clients both online and in-person to understand their requirements.
+    &bull; Demonstrated problem-solving skills by providing innovative solutions to meet client objectives.
+    &bull; Designed and developed web applications using modern frameworks like React JS and Next JS
+    &bull; Utilized Supabase and Firebase for seamless deployment and accessibility of full-stack applications.
     `
     }
-    // {
-    //   company: "Freelancing",
-    //   href: "",
-    //   badges: [],
-    //   location: "Remote",
-    //   title: "Web Developer",
-    //   logoUrl: "/images/experience/JustinMiguel2.png",
-    //   start: "July 2024",
-    //   end: "PRESENT",
-    //   description:
-    //   `<strong>Key Responsibilities:</strong>
-    // &bull; Designed and developed a responsive full-stack web-application.
-    // &bull; Implemented server-sided pagination, queries, and filtering.
-    // &bull; Optimized web-app performance with data fetching, and caching.
-    // &bull; Enhanced error handling with dynamic error messages from the API.
-    // `
-    // }
-  ],
+  ],  
   projects: [
 
     {
@@ -172,8 +172,8 @@ export const DATA = {
       "description": "A simple turn based Pokemon battle game built with React JS and Tailwind CSS.",
       "type": "School Project",
       "imageUrl": "/images/projects/pokemon.png",
-      "githubUrl": "https://github.com/jei3m/SDEV_Experiment-4/tree/main",
-      "demoUrl": "https://aboutjm.vercel.app",
+      "githubUrl": "https://github.com/jei3m/react-pokemon",
+      "demoUrl": "",
       "skills": [
           "React JS",
           "Tailwind CSS"
