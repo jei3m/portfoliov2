@@ -1,0 +1,112 @@
+---
+title: AI-Ponics
+summary: The technology behind AI-Ponics, the architecture of its monitoring system, and the web application's tech stack.
+image:
+author: 'Justin Reyes'
+publishedAt: 'February 11, 2025'
+---
+
+# AI-Ponics
+
+A Thesis project that integrates the fields of Internet of Things (IoT), Web Development, and Artificial Intelligence (AI) to enhance aeroponic systems. The web application utilizes technologies like Gemini AI for image detection and interactive chatbot functionality, Blynk API for real-time sensor monitoring, and Firebase for backend services, including plant data storage and user authentication.
+
+---
+
+## **Note:**
+
+This is a walkthrough of all of my contributions to our thesis as of this moment since this is still a work in progress. I am the main developer of the web application and also the one responsible for the development of the monitoring system which is then to be integrated at the Aeroponics tower. 
+
+To learn more about the project, here is the link of the repository: <a href="https://github.com/jei3m/ai-ponics" target="_blank"> https://github.com/jei3m/ai-ponics </a>
+
+---
+
+# Features
+
+ ### **Plant State Detection**
+- **Gemini 2.0 Flash** is used to analyze images of plants uploaded by users. It assesses the plant's health and growth, offering insights such as whether the plant is thriving or needs attention. The AI can also detect symptoms of common plant diseases or issues related to nutrition and environmental conditions.
+
+### **Real-Time Sensor Monitoring**
+- **Blynk API** integrates various environmental sensors, providing real-time data on factors like temperature, humidity, and other parameters that influence plant growth. This data is accessible through the app’s dashboard, ensuring users can monitor their aeroponic system remotely and act accordingly.
+
+### **Firebase Integration**
+- **Firebase** is used for user authentication (via Google), storing user data in the cloud, and synchronizing real-time changes across devices. This ensures seamless access to plant information and system controls from multiple devices.
+
+### **AI-Powered Chatbot**
+- The **Gemini 2.0 Flash** chatbot delivers real-time, personalized plant care advice by analyzing sensor data and user input. It  answers specific user queries to help maintain plant health.
+
+### **Email Notifications**
+- Users will receive email alerts when critical environmental conditions, like temperature thresholds, are reached. This feature helps ensure that the user is alerted if immediate actions are required.
+
+### **User-Friendly Interface**
+- The app’s frontend is built with **React JS** and utilizes **Ant Design** components for a smooth and intuitive user interface. The design prioritizes ease of navigation and allows users to quickly access key information like, sensor data, pump operation, and plant information.
+
+### **Multiple Blynk API Keys**
+- The application supports the use of **multiple Blynk API keys**, enabling users to manage different aeroponic systems and switch between them seamlessly, which is especially useful for users with multiple setups.
+
+---
+
+# Technologies Used
+
+### **React JS**
+- A JavaScript based framework created by Meta. This is the framework of choice dues to its component based architecture, which facilitates the creation of dynamic and responsive user interfaces. Additionally, it has multiple supported libraries which are implemented to reduce the time needed for development.
+
+### **Gemini 2.0 Flash**
+- A multimodal large language model developed by Google, chosen for its ability to both analyze plant images and function as a chatbot. This model leverages sensor data and plant information as context, allowing it to provide more accurate insights by combining image detection with conversational capabilities.
+
+### **Blynk API**
+- A low-code IoT cloud platform which is ideal for IoT projects like AI-Ponics, as it offers real-time data integration and monitoring for various sensors. Its ease of use and extensive support for hardware integration, and API support made it the perfect choice for this project.
+
+### **Firebase**
+- A comprehensive backend platform developed by Google, chosen for its services such as user authentication, real-time database management, and cloud storage. Firebase efficiently handles user profiles, stores sensor data, and enables real-time data synchronization across devices, making it an ideal solution for the AI-Ponics web application.
+
+---
+
+# Parts
+
+### **ESP32 Development Board**
+- A low-cost, versatile microcontroller. Chosen for its built-in WiFi module and direct compatibility with the Blynk API. Additionally it has support for Email libraries which are then utilized for the Email notification feature of the system.
+
+<img src="https://github.com/user-attachments/assets/41a04621-ba4c-4440-af4f-1e572a43edca" width="600"/>
+
+
+### **DHT22**
+- A temperature and humidity sensor. This is used for monitoring environmental conditions, with a temperature range of -40°C to 80°C and a humidity range of 0% to 100%. While its accuracy is ±0.5°C for temperature and ±1%.
+
+<img src="https://github.com/user-attachments/assets/23f49f05-ef8f-48cc-85aa-bf335c50f4be" width="400"/>
+
+### **YF-S201**
+- A Hall Effect water flow sensor with a working flow rate of 1 to 30 liters per minute and an accuracy of ±10%, used for monitoring the pump operation of the AI-Ponics system.
+
+<img src="https://github.com/user-attachments/assets/c9811138-0278-4bb1-bf75-0ca1785fb7f3" width="400"/>
+
+
+### **0.96 OLED Screen**
+- A compact display with a resolution of 128x64 pixels, commonly used to show real-time data such of sensor readings, and email alert status, in the AI-Ponics system.
+
+<img src="https://github.com/user-attachments/assets/57ce72b4-f97a-4060-8605-ef03667b44b8" alt="0.96 OLED Screen" width="300" />
+
+---
+
+# Schematic
+
+The schematic diagram below illustrates the connections between the ESP32 Development Board and the aforementioned sensors:
+
+![Image](https://github.com/user-attachments/assets/2a4539bd-45e7-4fea-b36c-8d16e34e8948)
+
+### DHT22
+
+![Image](https://github.com/user-attachments/assets/84ef0929-5de7-4a24-a241-93d825834378)
+
+The 3.3V pin is connected to the positive terminal of the DHT22 sensor, while the GND pin is connected to the negative terminal of the sensor. The data pin of the DHT22 sensor is connected to the D27 pin of the ESP32 Dev Board.
+
+### YF-S201
+
+![Image](https://github.com/user-attachments/assets/bc83c395-6ae3-4831-8c0b-95b7e2f30936)
+
+The positive terminal is connected to the VIN pin of the Dev Board, and the negative terminal is connected to the GND pin located just above the VIN pin on the Dev Board. While the signal pin is connected to the D26 pin of the Dev Board. The VIN pin of the Dev Board is used to power the Water Flow Sensor instead of other power options. Since the VIN pin on the ESP32 Dev Board can function as either an input or an output pin, depending on how the module is powered.
+
+### OLED Display
+
+![Image](https://github.com/user-attachments/assets/2fbda1f2-2a9d-48e7-ae38-5d7659c5e01e)
+
+The VCC pin of the OLED display is connected in parallel with the positive terminal of the DHT22 sensor at the 3.3V pin of the ESP32 module, while the GND pin of the OLED is connected in parallel with the DHT22 sensor at the GND pin of the ESP32 module. The SCL pin is connected to the D22 pin (default I2C clock line) of the ESP32, and the SDA pin is connected to the D21 pin. The ESP32 has flexible I2C pin assignments, allowing any I2C pin to be configured as SDA or SCL. However, GPIO21 (SDA) and GPIO22 (SCL) are commonly used as default I2C pins for compatibility with existing code, and libraries.
