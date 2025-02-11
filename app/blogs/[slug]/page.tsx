@@ -7,15 +7,15 @@ import { ArrowLeftIcon } from '@radix-ui/react-icons'
 import { notFound } from 'next/navigation'
 import { TransitionLink } from '@/components/custom-wrapper/TransitionLink'
 import Header from '@/components/header/Header'
-// import NewsletterForm from '@/components/newsletter-form'
 
 export async function generateStaticParams() {
   const posts = await getPosts()
   const slugs = posts.map(post => ({ slug: post.slug }))
-
   return slugs
 }
+
 type Params = Promise<{ slug: string }>
+
 export default async function Post({ params }: { params: Params }) {
   const { slug } = await params
 
@@ -29,7 +29,7 @@ export default async function Post({ params }: { params: Params }) {
   const { title, image, author, publishedAt } = metadata
 
   return (
-    <section className='bg-zinc-950 pb-24 max-w-6xl mx-auto p-4 md:p-6 lg:p-4 xl:p-0'>
+    <section className='bg-zinc-950 max-w-4xl mx-auto p-4 md:p-6 lg:p-4 xl:p-0'>
       <div className='w-full'>
           <div className='p-4 md:p-6 lg:p-10'>
             <Header />
@@ -61,13 +61,9 @@ export default async function Post({ params }: { params: Params }) {
           </div>
         )}
 
-        <main className='prose mt-16 prose-invert mx-auto max-w-6xl break-words'>
+        <main className='prose mt-4 prose-invert mx-auto max-w-6xl break-words pb-8'>
           <MDXContent source={content} />
         </main>
-
-        {/* <footer className='mt-16'>
-          <NewsletterForm />
-        </footer> */}
       </div>
     </section>
   )
