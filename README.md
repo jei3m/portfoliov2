@@ -1,5 +1,7 @@
 # Portfolio V2
 
+![image](https://github.com/user-attachments/assets/24dd456f-decd-494e-8800-41eac83a82f6)
+
 A modern, responsive portfolio website built with Next.js 14, featuring animations, smooth scrolling, and a blog section. This portfolio showcases my projects, skills, and my journey in web development and computer engineering.
 
 ## 🌟 Features
