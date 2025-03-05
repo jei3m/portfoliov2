@@ -6,11 +6,10 @@ export const DATA = {
       company: "Holy Angel University",
       href: "",
       badges: [],
-      location: "Remote",
       title: "BS in Computer Engineering",
       logoUrl: "/images/education/HAU.png",
-      start: "May 2021",
-      end: "Oct 2022",
+      start: "2021",
+      end: "2025",
       description:
       `
     <strong>President's List | GWA of 1.0 - 1.25</strong>
@@ -25,7 +24,6 @@ export const DATA = {
       company: "St. Augustine Academy of Pampanga",
       href: "",
       badges: [],
-      location: "Remote",
       title: "Senior Highschool",
       logoUrl: "/images/education/SAAP.png",
       start: "2019",
