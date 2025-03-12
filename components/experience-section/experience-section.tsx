@@ -35,7 +35,6 @@ export default function ExperienceSection() {
                         title={experience.company}
                         subtitle={experience.title}
                         href={experience.href}
-                        badges={experience.badges}
                         period={`${experience.start} - ${experience.end ?? "Present"}`}
                         description={experience.description}
                     />

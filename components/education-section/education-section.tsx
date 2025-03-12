@@ -34,7 +34,6 @@ export default function EducationSection() {
                     title={education.company}
                     subtitle={education.title}
                     href={education.href}
-                    badges={education.badges}
                     period={`${education.start} - ${education.end ?? "Present"}`}
                     description={education.description}
                 />
