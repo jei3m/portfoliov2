@@ -4,8 +4,7 @@ export const DATA = {
   education: [
     {
       company: "Holy Angel University",
-      href: "",
-      badges: [],
+      href: "https://www.hau.edu.ph",
       title: "BS in Computer Engineering",
       logoUrl: "/images/education/HAU.png",
       start: "2021",
@@ -22,8 +21,7 @@ export const DATA = {
     },
     {
       company: "St. Augustine Academy of Pampanga",
-      href: "",
-      badges: [],
+      href: "https://saap.edu.ph",
       title: "Senior Highschool",
       logoUrl: "/images/education/SAAP.png",
       start: "2019",
@@ -38,8 +36,7 @@ export const DATA = {
   experience: [
     {
       company: "Trackerteer",
-      href: "",
-      badges: [],
+      href: "https://www.trackerteer.com",
       title: "Web Developer Intern",
       logoUrl: "/images/experience/Trackerteer.jpg",
       start: "November 2024",
@@ -54,8 +51,7 @@ export const DATA = {
     },
     {
       company: "Freelance Web Developer",
-      href: "",
-      badges: [],
+      href: "https://github.com/jei3m",
       location: "Remote",
       title: "Web Developer",
       logoUrl: "/images/experience/JustinMiguel2.png",
@@ -73,18 +69,18 @@ export const DATA = {
   projects: [
 
     {
-        "title": "AI-Ponics",
-        "description": "A thesis project under development, built with React JS. It integrates Blynk API and Gemini AI.",
-        "type": "School Project",
-        "imageUrl": "/images/projects/aiponics.png",
-        "githubUrl": "https://github.com/jei3m/ai-ponics",
-        "demoUrl": "https://ai-ponics.netlify.app",
-        "skills": [
-            "React JS",
-            "Gemini AI",
-            "Blynk API",
-            "Firebase"
-        ]
+      "title": "AI-Ponics",
+      "description": "A thesis project under development, built with React JS. It integrates Blynk API and Gemini AI.",
+      "type": "School Project",
+      "imageUrl": "/images/projects/aiponics.png",
+      "githubUrl": "https://github.com/jei3m/ai-ponics",
+      "demoUrl": "https://ai-ponics.netlify.app",
+      "skills": [
+          "React JS",
+          "Gemini AI",
+          "Blynk API",
+          "Firebase"
+      ]
     },
     {
       "title": "ScribeAI",
