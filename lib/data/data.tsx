@@ -10,12 +10,11 @@ export const DATA = {
       start: "2021",
       end: "2025",
       description:
-      `
-    <strong>President's List | GWA of 1.0 - 1.25</strong>
+      `<strong>President's List | GWA of 1.0 - 1.25</strong>
     &bull; Second Semester, SY 2023-2024
     &bull; Second Semester, SY 2021-2022
 
-      <strong>Dean's List | GWA of 1.26 - 1.75</strong>
+    <strong>Dean's List | GWA of 1.26 - 1.75</strong>
     &bull; First Semester, SY 2024-2025
     &bull; First Semester, SY 2021-2022`
     },
