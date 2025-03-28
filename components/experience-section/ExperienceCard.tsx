@@ -29,7 +29,7 @@ export const ExperienceCard = ({
       <Link href={`${href}`} target="_blank">
         <div className="flex shadow-none py-6 border-b border-neutral-700">
           <div className="flex-none mr-4">
-            <Avatar className="border border-black dark:border-white size-16 md:size-20 bg-muted-background">
+            <Avatar className="border-2 border-white size-16 md:size-20 bg-muted-background">
               <AvatarImage
                 src={logoUrl}
                 alt={altText}

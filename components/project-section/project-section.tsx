@@ -68,7 +68,7 @@ const ProjectsGrid = () => {
                         </Reveal>
                     </div>
 
-                    <div className="flex justify-center pt-20 gap-4">
+                    <div className="flex justify-center pt-20 md:pt-[6rem] lg:pt-[8rem] gap-4">
                         <TransitionLink href="/projects">
                             <button
                                 className="shadow-[inset_0_0_0_2px_#616467] 

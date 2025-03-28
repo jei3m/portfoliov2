@@ -12,7 +12,7 @@ export default function Blogs({ posts }: { posts: PostMetadata[] }) {
             href={`/blogs/${post.slug}`}
           >
             <div className="block cursor-pointer">
-              <div className="flex shadow-none py-8 border-b-2 border-neutral-700">
+              <div className="flex shadow-none py-4 md:py-8 border-b-2 border-neutral-700">
 
                 {/* Content on the right */}
                 <div className="flex-grow">

@@ -30,7 +30,7 @@ function Page() {
         <div className="bg-zinc-950 flex flex-col mx-auto backdrop-blur-sm flex">
             <div className='mx-auto max-w-6xl '>
                 <Header />
-                <div className="pt-[6rem] relative mx-auto px-2 md:px-4 lg:px-0 flex flex-col items-center justify-center relative pb-20">
+                <div className="pt-[6rem] relative mx-auto px-2 md:px-4 xl:px-0 flex flex-col items-center justify-center relative pb-20">
                     <section id="projects" className="w-full">
                         <Reveal
                             initial={{ opacity: 0, x: -100 }}
