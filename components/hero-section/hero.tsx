@@ -10,15 +10,11 @@ import { FaRegEnvelope } from 'react-icons/fa6'
 import { CgFileDocument } from "react-icons/cg";
 import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
-
-
-
 export default function Hero() {
 
-
   return (
-    <section id="intro" className='flex text-center h-screen'>
-      <div className='flex-2 mx-auto mt-20 lg:mt-0 xl:mt-[2rem] relative z-30'>
+    <section id="intro" className='flex items-center text-center h-screen'>
+      <div className='flex-2 mx-auto mt-[-4rem] xl:mt-[-5rem] relative z-30'>
         <Reveal
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0, transition: { duration: 0.3 } }}

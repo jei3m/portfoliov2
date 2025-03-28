@@ -3,7 +3,6 @@ import { GeistSans } from 'geist/font/sans';
 import ReactLenis from 'lenis/react';
 import './globals.css'
 import Providers from '@/components/custom-wrapper/Providers'
-// import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Justin Miguel',
@@ -21,7 +20,6 @@ export default function RootLayout({
         <body className='bg-zinc-950'>
           <Providers>
             <main className='grow'>{children}</main>
-            {/* <Footer /> */}
           </Providers>
         </body>
       </ReactLenis>
