@@ -38,7 +38,7 @@ const ProjectsGrid = () => {
                         </p>
                     </Reveal>
 
-                    <div className="flex items-stretch h-full pt-[1rem]">
+                    <div className="flex items-stretch pt-[1rem]">
                         {/* Projects Container */}
                         <Reveal
                             initial={{ opacity: 0, x: -100 }}
@@ -67,7 +67,7 @@ const ProjectsGrid = () => {
                         </Reveal>
                     </div>
 
-                    <div className="flex justify-center pt-20 md:pt-[6rem] lg:pt-[8rem] gap-4">
+                    <div className="flex justify-center pt-10 md:pt-[4rem] gap-4">
                         <TransitionLink href="/projects">
                             <button
                                 className="shadow-[inset_0_0_0_2px_#616467] 
