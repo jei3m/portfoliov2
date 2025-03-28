@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { CardBody, CardContainer, CardItem } from "./3d-card";
 import { AspectRatio } from "./aspect-ratio";
 import { Badge } from "./badge";
 
@@ -15,90 +14,47 @@ interface ProjectCardProps {
 
 export function ProjectCard({ title, type, description, imageUrl, githubUrl, skills }: ProjectCardProps) {
     return (
-        <CardContainer className="w-full h-full">
-            <CardBody 
-                className="mb-[-80px] relative w-full max-w-[600px] h-auto mx-auto rounded-xl p-0 text-white">
-                
-                <div className="flex flex-col h-full">
-                    <CardItem className="w-full">
-                        <a href={githubUrl} target="_blank">
-                            <AspectRatio ratio={16 / 8.5}>
-                                <Image
-                                    src={imageUrl}
-                                    alt="Project Image"
-                                    fill
-                                    className="rounded-lg object-cover"
-                                />
-                            </AspectRatio>
-                        </a>
-                    </CardItem>
-                    
-                    <div className="">
-                        <CardItem
-                            as="h3"
-                            className="mt-2 text-lg sm:text-xl lg:text-2xl font-semibold text-yellow-50"
-                        >
-                            {title}
-                        </CardItem>
-                        <CardItem
-                            as="p"
-                            className="text-xs sm:text-sm text-gray-400"
-                        >
-                            {type}
-                        </CardItem>
-                        <CardItem
-                            as="p"
-                            className="text-xs sm:text-[16px] leading-5 sm:leading-6 mt-2 text-yellow-50"
-                        >
-                            {description}
-                        </CardItem>
-                        
-                        {skills && (
-                            <CardItem
-                                className="flex gap-1 sm:gap-1.5 flex-wrap mt-2 sm:mt-3"
-                            >
-                                {skills.map((skill) => (
-                                    <Badge 
-                                        key={skill} 
-                                        variant="default" 
-                                        className="text-white text-[10px] sm:text-xs px-2"
-                                    >
-                                        {skill}
-                                    </Badge>
-                                ))}
-                            </CardItem>
-                        )}
-                    
-                        {/* <CardItem
-                            className="w-auto flex flex-row justify-between items-center mt-6"
-                        >
-                            {githubUrl && (
-                                <Link href={githubUrl} target="_blank" passHref>
-                                    <Button 
-                                        size="sm" 
-                                        className="bg-yellow-50 text-black px-3 h-8 sm:h-9"
-                                    >
-                                        <span className="text-xs sm:text-sm">Github</span>
-                                        <FaGithub className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
-                                    </Button>
-                                </Link>
-                            )}
-
-                           {demoUrl && (
-                                <Link href={demoUrl} target="_blank" passHref>
-                                    <Button 
-                                        size="sm" 
-                                        className="bg-yellow-50 px-3 h-8 sm:h-9"
-                                    >
-                                        <span className="text-xs text-black sm:text-sm">Demo</span>
-                                        <ExternalLink className="text-black ml-2 h-3 w-3 sm:h-4 sm:w-4" />
-                                    </Button>
-                                </Link>
-                            )}
-                        </CardItem> */}
-                    </div>
+        <div className="relative w-full max-w-[600px] h-full mx-auto rounded-xl p-0 text-white">
+            <div className="flex flex-col h-full">
+                <div className="w-full flex-none">
+                    <a href={githubUrl} target="_blank">
+                        <AspectRatio ratio={16 / 8.5}>
+                            <Image
+                                src={imageUrl}
+                                alt="Project Image"
+                                fill
+                                className="rounded-lg object-cover"
+                            />
+                        </AspectRatio>
+                    </a>
                 </div>
-            </CardBody>
-        </CardContainer>
+                
+                <div className="h-full flex flex-col">
+                    <h3 className="mt-2 text-lg sm:text-xl lg:text-2xl font-semibold text-yellow-50">
+                        {title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-400">
+                        {type}
+                    </p>
+                    <p className="text-xs sm:text-[16px] leading-5 sm:leading-6 mt-2 text-yellow-50 mb-4">
+                        {description}
+                    </p>
+                    
+                    {skills && (
+                        <div className="flex gap-1 sm:gap-1.5 flex-wrap mt-auto">
+                            {skills.map((skill) => (
+                                <Badge 
+                                    key={skill} 
+                                    variant="default" 
+                                    className="text-white text-[10px] sm:text-xs px-2"
+                                >
+                                    {skill}
+                                </Badge>
+                            ))}
+                        </div>
+                    )}
+                </div>
+            </div>
+        </div>
     );
 }
