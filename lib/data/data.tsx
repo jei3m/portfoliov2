@@ -69,15 +69,16 @@ export const DATA = {
 
     {
       "title": "AI-Ponics",
-      "description": "A thesis project under development, built with React JS. It integrates Blynk API and Gemini AI.",
+      "description": "A thesis web application developed to monitor plants in an aeroponic system.",
       "type": "School Project",
       "imageUrl": "/images/projects/aiponics.png",
       "githubUrl": "https://github.com/jei3m/ai-ponics",
       "demoUrl": "https://ai-ponics.netlify.app",
       "skills": [
           "React JS",
-          "Gemini AI",
-          "Blynk API",
+          "Gemini",
+          "Blynk",
+          "OpenWeather",
           "Firebase"
       ]
     },
@@ -91,7 +92,7 @@ export const DATA = {
       "skills": [
           "React JS",
           "Firebase",
-          "Gemini AI"
+          "Gemini"
       ]
     },
     {
@@ -104,7 +105,7 @@ export const DATA = {
       "skills": [
           "Next JS",
           "Llama 3.3",
-          "Tailwind CSS"
+          "Tailwind"
       ]
     },
     {
@@ -116,7 +117,7 @@ export const DATA = {
       "demoUrl": "",
       "skills": [
           "Laravel",
-          "Tailwind CSS",
+          "Tailwind",
           "Paypal"
       ]
     },
@@ -129,7 +130,7 @@ export const DATA = {
       "demoUrl": "https://pogi-typings.vercel.app",
       "skills": [
           "React JS",
-          "Gemini AI",
+          "Gemini",
           "CSS"
       ]
     },
@@ -143,7 +144,7 @@ export const DATA = {
           "Next JS",
           "Ollama",
           "TypeScript",
-          "Tailwind CSS"
+          "Tailwind"
       ]
     },
     {
@@ -169,7 +170,7 @@ export const DATA = {
       "demoUrl": "",
       "skills": [
           "React JS",
-          "Tailwind CSS"
+          "Tailwind"
       ]
     },
 
