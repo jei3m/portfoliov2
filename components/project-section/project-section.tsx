@@ -33,12 +33,12 @@ const ProjectsGrid = () => {
                         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
                     >
                         <h2 className='text-2xl md:text-5xl font-semibold text-yellow-50 border-b border-neutral-700 pb-4'>Featured Projects.</h2>
-                        <p className="text-right mt-4 mb-[-1rem] text-xs font-normal md:text-2xl text-yellow-50">
+                        <p className="text-right mt-4 text-xs font-normal md:text-2xl text-yellow-50">
                             {'//'} My <span className='text-purple-400'>personal</span> and <span className='text-orange-400'>school</span> projects.
                         </p>
                     </Reveal>
 
-                    <div className="flex items-stretch">
+                    <div className="flex items-stretch h-full pt-[1rem]">
                         {/* Projects Container */}
                         <Reveal
                             initial={{ opacity: 0, x: -100 }}
@@ -51,14 +51,13 @@ const ProjectsGrid = () => {
                                         initial={{ opacity: 0, x: -100 }}
                                         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5, delay: index / 30 } }}
                                     >
-                                        <div className="flex flex-col">
+                                        <div className="h-full">
                                             <ProjectCard
                                                 title={project.title}
                                                 type={project.type}
                                                 description={project.description}
                                                 imageUrl={project.imageUrl}
                                                 githubUrl={project.githubUrl}
-                                                // demoUrl={project.demoUrl}
                                                 skills={project.skills}
                                             />
                                         </div>
