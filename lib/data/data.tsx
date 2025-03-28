@@ -39,7 +39,7 @@ export const DATA = {
       title: "Web Developer Intern",
       logoUrl: "/images/experience/Trackerteer.jpg",
       start: "November 2024",
-      end: "PRESENT",
+      end: "January 2025",
       description:
       `<strong>Key Responsibilities:</strong>
     &bull; Designed and developed a responsive admin interface utilizing Laravel and React JS.
