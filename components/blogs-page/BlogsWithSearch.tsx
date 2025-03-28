@@ -26,7 +26,7 @@ export default function BlogsWithSearch({ posts }: { posts: PostMetadata[] }) {
           <div className='flex items-center gap-3'>
             <Input
               type='text'
-              placeholder='Search posts...'
+              placeholder='Search blogs...'
               className='w-[140px] md:w-[300px] border border-neutral-700 text-xs md:text-xl mt-2 h-8 md:h-10'
               value={query}
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => setQuery(e.target.value)}
