@@ -42,12 +42,12 @@ function Page() {
                             </p>
                         </Reveal>
 
-                        <div className="flex items-stretch">
+                        <div className="flex pt-[2.5rem]">
                             {/* Projects Container */}
                             <div className={`
                                 grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2'} gap-10
                                 transition-all duration-500 ease-in-out
-                                mx-3 lg:mx-0
+                                mx-3 lg:mx-0 w-full
                             `}>
                                 {DATA.projects.map((project, index) => (
                                     <Reveal
@@ -55,18 +55,13 @@ function Page() {
                                         initial={{ opacity: 0, x: -100 }}
                                         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5, delay: index / 30 } }}
                                     >
-                                        <div className={`
-                                            ${isMobile ? 'w-full' : 'w-auto'}
-                                            transform transition-all duration-500
-                                            flex items-stretch
-                                        `}>
+                                        <div className="h-full">
                                             <ProjectCard
                                                 title={project.title}
                                                 type={project.type}
                                                 description={project.description}
                                                 imageUrl={project.imageUrl}
                                                 githubUrl={project.githubUrl}
-                                                // demoUrl={project.demoUrl}
                                                 skills={project.skills}
                                             />
                                         </div>
