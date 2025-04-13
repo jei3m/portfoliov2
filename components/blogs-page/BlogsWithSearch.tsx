@@ -20,8 +20,8 @@ export default function BlogsWithSearch({ posts }: { posts: PostMetadata[] }) {
 
   return (
     <div className='mt-4'>
-        <div className='flex items-center justify-between border-b border-neutral-700 pb-6'>
-          <h2 className='title text-2xl md:text-5xl font-semibold text-yellow-50'>Blogs.</h2>
+        <div className='flex items-center justify-between border-b border-neutral-700 pb-4'>
+          <h2 className='title text-2xl md:text-5xl font-semibold text-yellow-50 mt-2'>Blogs.</h2>
 
           <div className='flex items-center gap-3'>
             <Input
