@@ -55,7 +55,7 @@ export const DATA = {
       title: "Web Developer",
       logoUrl: "/images/experience/JustinMiguel2.png",
       start: "July 2024",
-      end: "PRESENT",
+      end: "February 2025",
       description:
       `<strong>Key Responsibilities:</strong>
     &bull; Collaborated with clients both online and in-person to understand their requirements.
