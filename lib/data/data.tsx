@@ -66,7 +66,20 @@ export const DATA = {
     }
   ],  
   projects: [
-
+    {
+      "title": "GitWrite",
+      "description": "A full-stack markdown editor built with React JS, Express JS, Node JS, and MongoDB.",
+      "type": "Personal Project",
+      "imageUrl": "/images/projects/gitwrite.png",
+      "githubUrl": "https://github.com/jei3m",
+      "demoUrl": "",
+      "skills": [
+          "React JS",
+          "Express JS",
+          "Node JS",
+          "MongoDB",
+      ]
+    },
     {
       "title": "AI-Ponics",
       "description": "A thesis web application developed to monitor plants in an aeroponic system.",
@@ -96,19 +109,6 @@ export const DATA = {
       ]
     },
     {
-      "title": "AI Coder",
-      "description": "A Next JS-based website integrated with Llama 405B to create React components with prompts.",
-      "type": "Personal Project",
-      "imageUrl": "/images/projects/aicoder.png",
-      "githubUrl": "https://github.com/jei3m/ai-coder",
-      "demoUrl": "https://ai-coder-llama.netlify.app",
-      "skills": [
-          "Next JS",
-          "Llama 3.3",
-          "Tailwind"
-      ]
-    },
-    {
       "title": "E-Commerce",
       "description": "A full-stack E-commerce platform built with Laravel, with PayPal integration for online payments.",
       "type": "Personal Project",
@@ -119,6 +119,33 @@ export const DATA = {
           "Laravel",
           "Tailwind",
           "Paypal"
+      ]
+    },
+    {
+      "title": "MERN Products",
+      "description": "A simple product management system built to practice CRUD operations with the MERN stack.",
+      "type": "Personal Project",
+      "imageUrl": "/images/projects/mernproducts.png",
+      "githubUrl": "https://github.com/jei3m/mern-products",
+      "demoUrl": "learn-mern-s4v4.onrender.com",
+      "skills": [
+          "React JS",
+          "Express JS",
+          "Node JS",
+          "MongoDB",
+      ]
+    },
+    {
+      "title": "AI Coder",
+      "description": "A Next JS-based website integrated with Llama 405B to create React components with prompts.",
+      "type": "Personal Project",
+      "imageUrl": "/images/projects/aicoder.png",
+      "githubUrl": "https://github.com/jei3m/ai-coder",
+      "demoUrl": "https://ai-coder-llama.netlify.app",
+      "skills": [
+          "Next JS",
+          "Llama 3.3",
+          "Tailwind"
       ]
     },
     {
