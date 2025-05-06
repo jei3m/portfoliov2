@@ -7,7 +7,7 @@ import { Reveal } from '@/components/custom-wrapper/Reveal';
 export default function EducationSection() {
 
   return (
-    <section id="education" className='mb-[14rem] mt-[5rem] scroll-mt-28 p-4 md:p-6 lg:p-4 xl:p-0'>
+    <section id="education" className='mb-[9rem] mt-[5rem] scroll-mt-28 p-4 md:p-6 lg:p-4 xl:p-0'>
         <div className="flex min-h-0 flex-col gap-y-3">
             <Reveal
                 initial={{ opacity: 0, x: -100 }}
