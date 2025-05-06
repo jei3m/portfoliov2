@@ -25,12 +25,12 @@ export default function AboutSection() {
                         <h2 className='font-semibold inline-flex items-center text-xl md:text-3xl lg:text-5xl 
                             text-yellow-50 text-justify border-b border-neutral-700 pb-4 w-full'
                         >
-                            I'm Justin Miguel.
+                            I&apos;m Justin Miguel.
                         </h2>
                         <h3 className='my-4 items-center text-lg md:text-2xl lg:text-3xl xl:text-4xl
                             text-yellow-50 xl:text-justify'
                         >
-                            A <strong className='text-orange-400'>Computer Engineering</strong> graduate and a Full Stack <strong className='text-purple-400'>Web Developer</strong>, from the <strong className='text-red-400'>Philippines</strong>.
+                            A <strong className='text-orange-400'>Computer Engineering</strong> graduate and a Full Stack <strong className='text-purple-400'>Web Developer</strong>, based in the <strong className='text-red-400'>Philippines</strong>.
                             <br/>
                             <br/>
                             I specialize in <strong className='text-yellow-300'>JavaScript</strong> frameworks, focused on delivering web-based <strong className='text-cyan-400'>solutions</strong>.
