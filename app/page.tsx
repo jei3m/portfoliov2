@@ -1,3 +1,4 @@
+import AboutSection from '@/components/about-section/about-section'
 import EducationSection from '@/components/education-section/education-section'
 import ExperienceSection from '@/components/experience-section/experience-section'
 import Hero from '@/components/hero-section/hero'
@@ -18,6 +19,7 @@ export default function Home() {
 
         <div className='mx-auto max-w-6xl p-2 sm:p-6 md:p-0'>
           <Hero />
+          <AboutSection/>
           <EducationSection/>
           <ExperienceSection/>
           <ProjectSection/>
