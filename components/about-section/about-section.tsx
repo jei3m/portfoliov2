@@ -17,7 +17,8 @@ export default function AboutSection() {
                         alt="Justin Miguel"
                         width={1000}
                         height={1000}
-                        className="p-[2px] bg-neutral-700 mx-auto mb-4 md:mb-0 rounded-3xl object-cover w-[90%] md:w-[34%] xl:w-[26%] h-auto aspect-[4/4] md:aspect-[5/6]"
+                        quality={100}
+                        className="p-[2px] bg-neutral-700 mx-auto mb-4 md:mb-0 rounded-3xl object-cover w-[90%] md:w-[34%] xl:w-[34%] h-auto aspect-[4/4] md:aspect-[5/6]"
                     />
                     <div className='flex flex-col justify-between'>
                         <div>
