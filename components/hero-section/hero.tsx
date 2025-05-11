@@ -14,7 +14,7 @@ export default function Hero() {
 
   return (
     <section id="intro" className='flex items-center text-center h-screen'>
-      <div className='flex-2 mx-auto mt-[-4rem] xl:mt-[-5rem] relative z-30'>
+      <div className='flex-2 mx-auto mt-[-4rem] xl:mt-[-8rem] relative z-30'>
         <Reveal
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0, transition: { duration: 0.3 } }}
