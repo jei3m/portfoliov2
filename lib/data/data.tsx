@@ -71,7 +71,7 @@ export const DATA = {
       "description": "A full-stack markdown editor built with React JS, Express JS, Node JS, and MongoDB.",
       "type": "Personal Project",
       "imageUrl": "/images/projects/gitwrite.png",
-      "githubUrl": "https://github.com/jei3m",
+      "githubUrl": "https://github.com/jei3m/git-write",
       "demoUrl": "",
       "skills": [
           "React JS",
