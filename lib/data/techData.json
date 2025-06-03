@@ -30,19 +30,20 @@
     "icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg"
   },
   {
+    "title": "Backend Development",
+    "description": "Building scalable and efficient APIs with modern JavaScript-based frameworks, and NOSQL databases.",
+    "icons": [
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg",
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express.svg",
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg"
+    ]
+  },
+  {
     "title": "Backend Services",
     "description": "For real-time databases, authentication, and cloud functions, offering easy deployment.",    
     "icons": [
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg",
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/supabase-colored.svg"
-    ]
-  },
-  {
-    "title": "Programming",
-    "description": "Python for machine learning and data analysis, and C++ for input/output operations.",
-    "icons": [
-      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg",
-      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/cplusplus-colored.svg"
     ]
   },
   {
