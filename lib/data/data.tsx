@@ -11,6 +11,7 @@ export const DATA = {
       end: "2025",
       description:
       `<strong>President's List | GWA of 1.0 - 1.25</strong>
+    &bull; Second Semester, SY 2024-2025
     &bull; Second Semester, SY 2023-2024
     &bull; Second Semester, SY 2021-2022
 
