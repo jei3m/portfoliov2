@@ -35,6 +35,20 @@ export const DATA = {
   ],
   experience: [
     {
+      company: "Servo IT Solutions",
+      href: "https://servoitsolutions.ph",
+      title: "Associate Backend Developer",
+      logoUrl: "/images/experience/Servo.jpg",
+      start: "June 2025",
+      end: "Present",
+      description:
+      `<strong>Key Responsibilities:</strong>
+    &bull; Worked on the Hermes Cloud, addressing backend development tasks by completing tickets.  
+    &bull; Translated user stories into functional features, ensuring alignment with project requirements.  
+    &bull; Participated in sprint cycles and collaborated with cross-functional teams for agile delivery.
+    `
+    },
+    {
       company: "Trackerteer",
       href: "https://www.trackerteer.com",
       title: "Web Developer Intern",
@@ -49,22 +63,22 @@ export const DATA = {
     &bull; Enhanced error handling with dynamic API error messages, ensuring accurate feedback.
     `
     },
-    {
-      company: "Freelance Web Developer",
-      href: "https://github.com/jei3m",
-      location: "Remote",
-      title: "Web Developer",
-      logoUrl: "/images/experience/JustinMiguel2.png",
-      start: "July 2024",
-      end: "March 2025",
-      description:
-      `<strong>Key Responsibilities:</strong>
-    &bull; Collaborated with clients both online and in-person to understand their requirements.
-    &bull; Demonstrated problem-solving skills by providing innovative solutions to meet client objectives.
-    &bull; Designed and developed web applications using modern frameworks like React JS and Next JS
-    &bull; Utilized Supabase and Firebase for seamless deployment and accessibility of full-stack applications.
-    `
-    }
+    // {
+    //   company: "Freelance Web Developer",
+    //   href: "https://github.com/jei3m",
+    //   location: "Remote",
+    //   title: "Web Developer",
+    //   logoUrl: "/images/experience/JustinMiguel2.png",
+    //   start: "July 2024",
+    //   end: "March 2025",
+    //   description:
+    //   `<strong>Key Responsibilities:</strong>
+    // &bull; Collaborated with clients both online and in-person to understand their requirements.
+    // &bull; Demonstrated problem-solving skills by providing innovative solutions to meet client objectives.
+    // &bull; Designed and developed web applications using modern frameworks like React JS and Next JS
+    // &bull; Utilized Supabase and Firebase for seamless deployment and accessibility of full-stack applications.
+    // `
+    // }
   ],  
   projects: [
     {
