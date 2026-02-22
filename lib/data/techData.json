@@ -1,7 +1,7 @@
 [
   {
     "title": "Frameworks",
-    "description": "Building responsive and efficient user experiences with front-end and full-stack applications.",  
+    "description": "Building responsive and efficient user experiences with front-end and full-stack applications.",
     "icons": [
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg",
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored-dark.svg",
@@ -10,8 +10,8 @@
   },
   {
     "title": "JS Ecosystem",
-     "description": "Developing interactive and dynamic applications for both front-end and backend development.",    
-     "icons": [
+    "description": "Developing interactive and dynamic applications for both front-end and backend development.",
+    "icons": [
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg",
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
     ]
@@ -40,7 +40,7 @@
   },
   {
     "title": "Backend Services",
-    "description": "For real-time databases, authentication, and cloud functions, offering easy deployment.",    
+    "description": "For real-time databases, authentication, and cloud functions, offering easy deployment.",
     "icons": [
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg",
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/supabase-colored.svg"

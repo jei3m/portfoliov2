@@ -1,14 +1,21 @@
 'use client';
 
-import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
-import React, { useRef } from "react";
-import { FiArrowRight } from "react-icons/fi";
+import {
+  useMotionValue,
+  motion,
+  useSpring,
+  useTransform,
+} from 'framer-motion';
+import React, { useRef } from 'react';
+import { FiArrowRight } from 'react-icons/fi';
 
 export const HoverImageLinks = () => {
   return (
     <section className="max-w-6xl min-h-screen">
       <div className="mx-auto">
-        <h2 className='title text-4xl font-semibold border-b-2 border-neutral-700 pb-4'>Featured Projects.</h2>
+        <h2 className="title text-4xl font-semibold border-b-2 border-neutral-700 pb-4">
+          Featured Projects.
+        </h2>
         <Projects
           heading="AI-Ponics"
           subheading="Learn what we do here"
@@ -28,7 +35,10 @@ export const HoverImageLinks = () => {
           href="#"
         />
         <button className="mt-8 flex mx-auto">
-          <a href="/projects" className="text-4xl font-normal text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300 transition-colors duration-200">
+          <a
+            href="/projects"
+            className="text-4xl font-normal text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300 transition-colors duration-200"
+          >
             View All...
           </a>
         </button>
@@ -44,7 +54,12 @@ interface ProjectsProps {
   href: string;
 }
 
-const Projects = ({ heading, imgSrc, subheading, href }: ProjectsProps) => {
+const Projects = ({
+  heading,
+  imgSrc,
+  subheading,
+  href,
+}: ProjectsProps) => {
   const ref = useRef<HTMLAnchorElement | null>(null);
 
   const x = useMotionValue(0);
@@ -53,8 +68,16 @@ const Projects = ({ heading, imgSrc, subheading, href }: ProjectsProps) => {
   const mouseXSpring = useSpring(x);
   const mouseYSpring = useSpring(y);
 
-  const top = useTransform(mouseYSpring, [0.5, -0.5], ["40%", "60%"]);
-  const left = useTransform(mouseXSpring, [0.5, -0.5], ["60%", "70%"]);
+  const top = useTransform(
+    mouseYSpring,
+    [0.5, -0.5],
+    ['40%', '60%']
+  );
+  const left = useTransform(
+    mouseXSpring,
+    [0.5, -0.5],
+    ['60%', '70%']
+  );
 
   const handleMouseMove = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
@@ -90,19 +113,19 @@ const Projects = ({ heading, imgSrc, subheading, href }: ProjectsProps) => {
             whileHover: { x: -16 },
           }}
           transition={{
-            type: "spring",
+            type: 'spring',
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
           className="relative z-10 block text-4xl font-normal text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 md:text-4xl"
         >
-          {heading.split("").map((l, i) => (
+          {heading.split('').map((l, i) => (
             <motion.span
               variants={{
                 initial: { x: 0 },
                 whileHover: { x: 16 },
               }}
-              transition={{ type: "spring" }}
+              transition={{ type: 'spring' }}
               className="inline-block"
               key={i}
             >
@@ -119,14 +142,14 @@ const Projects = ({ heading, imgSrc, subheading, href }: ProjectsProps) => {
         style={{
           top,
           left,
-          translateX: "-50%",
-          translateY: "-50%",
+          translateX: '-50%',
+          translateY: '-50%',
         }}
         variants={{
-          initial: { scale: 0, rotate: "0" },
-          whileHover: { scale: 0.4, rotate: "0" },
+          initial: { scale: 0, rotate: '0' },
+          whileHover: { scale: 0.4, rotate: '0' },
         }}
-        transition={{ type: "spring" }}
+        transition={{ type: 'spring' }}
         src={imgSrc}
         className="absolute z-0 rounded-lg object-cover"
         alt={`Image representing a link for ${heading}`}

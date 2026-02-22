@@ -1,28 +1,32 @@
-import type { Metadata } from 'next'
+import type { Metadata } from 'next';
 import { GeistSans } from 'geist/font/sans';
 import ReactLenis from 'lenis/react';
-import './globals.css'
-import Providers from '@/components/custom-wrapper/Providers'
+import './globals.css';
+import Providers from '@/components/custom-wrapper/Providers';
 
 export const metadata: Metadata = {
   title: 'Justin Miguel',
-  description: 'Next JS Portfolio'
-}
+  description: 'Next JS Portfolio',
+};
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' suppressHydrationWarning className={`${GeistSans.className} !scroll-smooth`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${GeistSans.className} !scroll-smooth`}
+    >
       <ReactLenis root>
-        <body className='bg-zinc-950'>
+        <body className="bg-zinc-950">
           <Providers>
-            <main className='grow'>{children}</main>
+            <main className="grow">{children}</main>
           </Providers>
         </body>
       </ReactLenis>
     </html>
-  )
+  );
 }

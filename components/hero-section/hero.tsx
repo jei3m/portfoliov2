@@ -1,23 +1,38 @@
-import Image from 'next/image'
-import authorImage from '@/public/images/authors/memoji.png'
-import { Reveal } from '@/components/custom-wrapper/Reveal'
-import { FiArrowDown } from "react-icons/fi";
-import GridPattern from '@/components/ui/grid-pattern'
-import { cn } from "@/lib/utils"
+import Image from 'next/image';
+import authorImage from '@/public/images/authors/memoji.png';
+import { Reveal } from '@/components/custom-wrapper/Reveal';
+import { FiArrowDown } from 'react-icons/fi';
+import GridPattern from '@/components/ui/grid-pattern';
+import { cn } from '@/lib/utils';
 import ScrollLink from '@/components/custom-wrapper/ScrollLink';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { FaRegEnvelope } from 'react-icons/fa6'
-import { CgFileDocument } from "react-icons/cg";
-import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
+import { FaRegEnvelope } from 'react-icons/fa6';
+import { CgFileDocument } from 'react-icons/cg';
+import {
+  FaFacebookSquare,
+  FaGithubSquare,
+  FaLinkedin,
+} from 'react-icons/fa';
 
 export default function Hero() {
-
   return (
-    <section id="intro" className='flex items-center text-center h-screen'>
-      <div className='flex-2 mx-auto mt-[-4rem] xl:mt-[-8rem] relative z-30'>
+    <section
+      id="intro"
+      className="flex items-center text-center h-screen"
+    >
+      <div className="flex-2 mx-auto mt-[-4rem] xl:mt-[-8rem] relative z-30">
         <Reveal
           initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.3 } }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.3 },
+          }}
         >
           {/* Image with higher z-index to stand out */}
           <div className="flex justify-center relative">
@@ -35,36 +50,47 @@ export default function Hero() {
               I&apos;m Justin!
             </div>
           </div>
-          <h1 className='max-w-xl text-purple-400 text-4xl md:text-7xl lg:text-8xl font-medium mx-auto mb-1'>
-            COMPUTER 
+          <h1 className="max-w-xl text-purple-400 text-4xl md:text-7xl lg:text-8xl font-medium mx-auto mb-1">
+            COMPUTER
           </h1>
-          <div className='flex flex-row justify-center items-center gap-2 md:gap-4 mb-1'>          
-            <h1 className='text-4xl md:text-7xl lg:text-8xl  font-medium text-yellow-50'>
-              ENGINEER 
+          <div className="flex flex-row justify-center items-center gap-2 md:gap-4 mb-1">
+            <h1 className="text-4xl md:text-7xl lg:text-8xl  font-medium text-yellow-50">
+              ENGINEER
             </h1>
-            <ScrollLink id='education'>
-              <div className="flex flex-row shadow-[inset_0_0_0_2px_#616467] rounded-full uppercase text-sm px-3 py-2 text-yellow-50 md:text-lg md:px-6 md:py-3 font-semibold bg-transparent transition-all">              
-                and also <FiArrowDown className='text-xl md:text-2xl border-2 border-black dark:border-white rounded-full ml-2'/>
+            <ScrollLink id="education">
+              <div className="flex flex-row shadow-[inset_0_0_0_2px_#616467] rounded-full uppercase text-sm px-3 py-2 text-yellow-50 md:text-lg md:px-6 md:py-3 font-semibold bg-transparent transition-all">
+                and also{' '}
+                <FiArrowDown className="text-xl md:text-2xl border-2 border-black dark:border-white rounded-full ml-2" />
               </div>
             </ScrollLink>
           </div>
-          <h1 className='text-4xl md:text-7xl lg:text-8xl font-medium mx-auto text-yellow-50'>
-            <span className='text-orange-300'></span> WEB <span className='text-cyan-300'>DEVELOPER</span>
+          <h1 className="text-4xl md:text-7xl lg:text-8xl font-medium mx-auto text-yellow-50">
+            <span className="text-orange-300"></span> WEB{' '}
+            <span className="text-cyan-300">DEVELOPER</span>
           </h1>
         </Reveal>
 
         <Reveal
           initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.4 },
+          }}
         >
-          <p className='mt-3 font-normal text-sm md:text-2xl text-muted-foreground max-w-xs md:max-w-2xl mx-auto'>
-            I&apos;m an aspiring Software Engineer with foundations in Web Development, IoT, and IT.
+          <p className="mt-3 font-normal text-sm md:text-2xl text-muted-foreground max-w-xs md:max-w-2xl mx-auto">
+            I&apos;m an aspiring Software Engineer with
+            foundations in Web Development, IoT, and IT.
           </p>
         </Reveal>
 
         <Reveal
           initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.5 },
+          }}
         >
           {/* Use Tailwind classes for flex layout */}
           <TooltipProvider>
@@ -132,7 +158,11 @@ export default function Hero() {
               {/* Resume Icon with Tooltip */}
               <Tooltip>
                 <TooltipTrigger>
-                  <a href="/resume/ReyesJustinMiguel_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="/resume/ReyesJustinMiguel_Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <CgFileDocument className="h-7 w-7 md:h-10 md:w-10 text-yellow-50" />
                   </a>
                 </TooltipTrigger>
@@ -151,9 +181,9 @@ export default function Hero() {
         x={-1}
         y={-1}
         className={cn(
-          "[mask-image:radial-gradient(400px_circle_at_center,white,transparent)] -translate-y-[40px] md:-translate-y-[100px] ",
+          '[mask-image:radial-gradient(400px_circle_at_center,white,transparent)] -translate-y-[40px] md:-translate-y-[100px] '
         )}
       />
     </section>
-  )
+  );
 }

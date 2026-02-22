@@ -1,9 +1,13 @@
-"use client";
+'use client';
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { CardHeader } from "@/components/ui/card";
-import React from "react";
-import Link from "next/link";
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from '@/components/ui/avatar';
+import { CardHeader } from '@/components/ui/card';
+import React from 'react';
+import Link from 'next/link';
 
 interface EducationCardProps {
   logoUrl: string;
@@ -42,22 +46,28 @@ export const EducationCard = ({
 
           <div className="flex-grow">
             <CardHeader className="p-0">
-                <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-x-2 text-base">
-                  <h3 className="inline-flex items-center text-lg md:text-2xl lg:text-4xl font-medium text-yellow-50">
-                    {title}
-                  </h3>
-                  
-                  <div className="text-xs md:text-lg tabular-nums text-right text-yellow-50">
-                    {period}
-                  </div>
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-x-2 text-base">
+                <h3 className="inline-flex items-center text-lg md:text-2xl lg:text-4xl font-medium text-yellow-50">
+                  {title}
+                </h3>
+
+                <div className="text-xs md:text-lg tabular-nums text-right text-yellow-50">
+                  {period}
                 </div>
-              {subtitle && <div className="text-md md:text-xl lg:text-2xl mt-1 text-yellow-50">{subtitle}</div>}
+              </div>
+              {subtitle && (
+                <div className="text-md md:text-xl lg:text-2xl mt-1 text-yellow-50">
+                  {subtitle}
+                </div>
+              )}
             </CardHeader>
 
             {description && (
               <div
                 className="mt-4 text-xs md:text-lg lg:text-xl whitespace-pre-line text-yellow-50"
-                dangerouslySetInnerHTML={{ __html: description }}
+                dangerouslySetInnerHTML={{
+                  __html: description,
+                }}
               />
             )}
           </div>

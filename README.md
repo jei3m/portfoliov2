@@ -25,16 +25,19 @@ A modern, responsive portfolio website built with Next.js 14, featuring animatio
 ## 🚀 Getting Started
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/jei3m/portfolio-v2.git
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Run the development server:
+
 ```bash
 npm run dev
 ```

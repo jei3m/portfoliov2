@@ -7,15 +7,19 @@ publishedAt: 'July 2, 2024'
 ---
 
 # ESP32 Marauder from Source to CYD
+
 A simple guide to installing the firmware from source without the hassle of editing multiple files.
 
 ---
-## Note: 
+
+## Note:
+
 All of the files needed to proceed with the tutorial are located here: [CYD-MARAUDER](https://github.com/jei3m/cyd-marauder)
 
 ---
 
 ## Preparing Arduino IDE `2.2.1`
+
 1. **Download Arduino IDE 2.2.1** from [SOURCEFORGE](https://sourceforge.net/projects/arduino-ide.mirror/files/2.2.1/).
 2. Open the Arduino IDE and go to **File > Preferences**.
 3. Add the following URLs to **Additional Boards Manager URLs**:
@@ -27,6 +31,7 @@ All of the files needed to proceed with the tutorial are located here: [CYD-MARA
 ---
 
 ## Installing Arduino IDE Libraries
+
 1. Download the `libraries` folder from the [CYD Marauder repository](https://github.com/jei3m/cyd-marauder).
 2. Copy the `libraries` folder to your Arduino directory:
    - **Windows**: `C:\Users\USERNAME\OneDrive\Documents\Arduino`
@@ -37,6 +42,7 @@ All of the files needed to proceed with the tutorial are located here: [CYD-MARA
 ---
 
 ## Replacing `platform.txt`
+
 1. Download the `platform.txt` file from the [CYD Marauder repository](https://github.com/jei3m/cyd-marauder).
 2. Navigate to:
    - **Windows**: `C:\Users\USERNAME\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11`
@@ -48,6 +54,7 @@ All of the files needed to proceed with the tutorial are located here: [CYD-MARA
 ---
 
 ## Configuring `TFT_eSPI-master`
+
 1. Navigate to the `TFT_eSPI-master` library folder:
    - **Windows**: `C:\Users\USERNAME\OneDrive\Documents\Arduino\libraries\TFT_eSPI-master`
    - **Mac/Linux**: `~/Documents/Arduino/libraries/TFT_eSPI-master`
@@ -61,6 +68,7 @@ All of the files needed to proceed with the tutorial are located here: [CYD-MARA
 ---
 
 ## Flashing the ESP32 Marauder Firmware
+
 1. Download the `esp32_marauder.zip` file from the [CYD Marauder repository](https://github.com/jei3m/cyd-marauder) and extract it.
 2. Open the `esp32_marauder.ino` file in the Arduino IDE.
 3. Select the board: **Tools > Board > LOLIN D32**.
@@ -74,6 +82,7 @@ All of the files needed to proceed with the tutorial are located here: [CYD-MARA
 ---
 
 ## Modding the Splash Screen
+
 1. Open the `esp32_marauder.ino` file.
 2. Locate and edit the following lines of code to customize the splash screen:
 
@@ -84,6 +93,7 @@ All of the files needed to proceed with the tutorial are located here: [CYD-MARA
 That’s it! You’ve successfully installed the ESP32 Marauder firmware on your CYD. For more details, visit the [CYD Marauder repository](https://github.com/jei3m/cyd-marauder).
 
 ## Learn More
+
 - For a Webflash Installer, visit: [Fr4nkFletcher](https://github.com/Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display).
 - For more information about the ESP32 Marauder project, visit: [justcallmekoko](https://github.com/justcallmekoko/ESP32Marauder).
 - For an in-depth installation process, check out: [smoochiee](https://github.com/smoochiee/MARAUDER-FOR-CYD---CHEAP-YELLOW-DISPLAY/tree/main).
